@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>App Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500&display=swap" rel="stylesheet">
+  </head>
+    <body>
+      <h1 id="title">App Feedback</h1>
+      <p id="description"><em>We always want to improve your expirience in our app so we would like your honest feedback!</em></p>
+      <main>
+          <form id="survey-form">
+            <section id="user-info">
+              <label id="name-label" for="name">Name</label>
+              <br>
+              <input id="name" class="bigger" type="text" placeholder="Enter Your Name" required>
+              <br>
+              <label id="email-label" for="email">Email</label>
+              <br>
+              <input id="email" class="bigger" type="email" placeholder="Enter Your Email" required>
+              <br>
+              <label id="number-label" for="number">Age</label>
+              <br>
+              <input id="number" class="bigger" type="number" min="8" max="120" placeholder="Enter Your Age" required>
+            </section>
+            <br>
+            <section id="gender">
+              <strong><label for="dropdown">What is your gender?</label></strong>
+              <br>
+                <select id="dropdown" class="bigger" name="dropdown" required>
+                <option value="" disabled selected>Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </section>
+            <br>
+            <section id="radio-buttons">
+              <strong><p id="radio-title">How is your expirience using the app?</p></strong>
+              <label for="radio-1"><input id="radio-1" class="radio" name="choice" type="radio" value="great" checked>Great!</label>
+              <br>
+              <label for="radio-2"><input id="radio-2" class="radio" name="choice" type="radio" value="good">Good</label>
+              <br>
+              <label for="radio-3"><input id="radio-3" class="radio" name="choice" type="radio" value="ok">Ok</label>
+              <br>
+              <label for="radio-4"><input id="radio-4" class="radio" name="choice" type="radio" value="bad">Bad</label>
+              <br>
+              <label for="radio-5"><input id="radio-5" class="radio" name="choice" type="radio" value="terrible">Terrible</label>
+              <br>
+            </section>
+            <br>
+
+            <section id="checkboxes">
+              <strong><label>What types of workouts are you doing in this app?</label></strong>
+              <br>
+              <label for="checkbox1"><input id="checkbox1" class="checkbox" type="checkbox" value="weightlifting">Weightlifting</label>
+              <br> 
+              <label for="checkbox2"><input id="checkbox2" class="checkbox" type="checkbox" value="crossfit">Crossfit</label>
+              <br> 
+              <label for="checkbox3"><input id="checkbox3" class="checkbox" type="checkbox" value="running">Running</label>
+              <br>
+              <label for="checkbox4"><input id="checkbox4" class="checkbox" type="checkbox" value="yoga">Yoga</label>
+              <br>
+              <label for="checkbox5"><input id="checkbox5" class="checkbox" type="checkbox" value="pilates">Pilates</label>
+              <br> 
+              <label for="checkbox6"><input id="checkbox6" class="checkbox" type="checkbox" value="cycling">Cycling</label>
+              <br> 
+              <label for="checkbox7"><input id="checkbox7" class="checkbox" type="checkbox" value="dance">Dance</label>
+              <br>
+              <label for="checkbox8"><input id="checkbox8" class="checkbox" type="checkbox" value="bodyweight">Bodyweight</label>
+              <br>
+              <label for="checkbox9"><input id="checkbox9" class="checkbox" type="checkbox" value="other">Other</label>
+              <br>
+
+            </section>
+            <br>
+            <section id="open">
+              <strong><p id="open-label">Any more feedback you would like to add?</p></strong>
+              <textarea class="bigger" placeholder="Anything else?"></textarea>
+            </section>
+            <br>
+            <input id="submit" type="submit" value="Submit">
+          </form>
+      </main>
+    </body>
+</html>
